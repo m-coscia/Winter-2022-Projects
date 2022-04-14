@@ -45,7 +45,7 @@ public class PlayLadderAndSnake {
       System.out.println("Let's start a new game!\n");
       //getting user to enter number of players
       System.out.print("Enter the # of players for your game "+
-                       "– Number must be between 2 and 4 inclusively: ");
+                       "â€“ Number must be between 2 and 4 inclusively: ");
       int no_players = key.nextInt();
       //cycling through user input for validity
       outer: while(no_players > 4 || no_players < 2) {
