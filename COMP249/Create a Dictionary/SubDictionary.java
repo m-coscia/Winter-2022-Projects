@@ -95,8 +95,8 @@ public class SubDictionary {
 			if(word.indexOf(".") != -1) {
 				word = word.substring(0, word.indexOf("."));
 			}
-			if(word.indexOf("’") != -1) {
-				word = word.substring(0, word.indexOf("’"));
+			if(word.indexOf("â€™") != -1) {
+				word = word.substring(0, word.indexOf("â€™"));
 			}
 			if(word.indexOf("\'") != -1) {
 				word = word.substring(0, word.indexOf("\'"));
