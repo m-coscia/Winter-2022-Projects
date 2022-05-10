@@ -8,3 +8,8 @@ exception handling, file I/O, recursion, interfaces, inner classes, graphical us
 generics, collections and iterators.
 
 The projects in this folder are the assignments done in this course that utilize the above topics.
+
+## Projects:
+
+### 1. Snake and Ladders Game
+[a link](https://github.com/m-coscia/Winter-2022-Projects/tree/main/COMP249/Snakes%20and%20Ladders%20Game)
