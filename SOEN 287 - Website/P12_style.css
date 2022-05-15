@@ -1,0 +1,33 @@
+.container-fluid{
+    padding-right: 3%;
+}
+img{
+    height: 100px;
+}
+.header{
+    background: #709176;
+    margin-bottom: 2%;        
+}
+.header a{
+    color: white;
+    text-decoration: none;
+}
+.container-fluid a{
+    text-decoration: none;
+    color:black;
+}
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+.username{
+    width: 20%;
+}
+
+.increase-column, .decrease-column, .delete-column{
+    width:7%;
+}
+
+.price-column, .count-column{
+    width: 5%
+}

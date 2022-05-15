@@ -1,0 +1,306 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;  
+  }
+
+
+:root{
+    --white: #fff;
+    --black: #03071e;
+    --light-green: #e7f8b2;
+    --mid-green: #CDE77F;
+    --green: #709176;
+    --drap-brown: #79745C;
+    --brown: #704E2E;
+    --box-shadow:0 3px 8px rgba(24, 24, 24, 0.185);
+    --border: 2px solid rgba(0, 0, 0, 0.061);
+    --outline:5px solid #e7f8b2;
+    --outline-hover: 3px solid var(--black);
+}
+  
+  body {
+  
+      background: white;
+    
+  }
+
+  nav {
+    position:fixed;
+    top: 0; 
+    left: 0; 
+    right: 0;
+    background-color: #709176;
+    padding: 10px;
+    width: 100%;
+    height: 70px;
+    padding: 10px 10px;
+    display:flex;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+nav a img{
+    height: 50px;
+    float: left;
+    padding-right: 10px;
+    display: flex;
+}
+nav i{
+    color: #e7f8b2;
+    padding-left:10px;
+    padding-top: 10px;
+}
+nav .drop_main{
+    position:relative;
+    display: block;
+}
+nav .drop_main .drop_cat{
+    display:none;
+    position: relative;
+    background-color:rgb(238, 238, 238);
+    min-width: 200px;
+    z-index: 1;
+    padding: 15px 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+nav .drop_main .drop_cat a{
+    color:#709176;
+    padding : 5px;
+    padding-bottom: 5px;
+    padding-right:10px;
+    padding-left: 10px;
+    width:200px;
+    text-decoration: none;
+    display:flex;
+}
+nav .drop_main .drop_cat a:hover{
+    background-color: #CDE77F;
+    
+    font-weight: bold;
+}
+nav .drop_main:hover .drop_cat{
+    display: block;
+}
+
+nav .drop_main .drop_cat .drop_sub1{
+    display: none;
+    position: relative;
+    background-color:rgb(238, 238, 238);
+    width: 200px;
+    z-index: 1;
+    text-decoration: none;
+}
+nav .drop_main .drop_cat .drop_sub1 a{
+    color:#709176;
+}
+nav .drop_main .drop_cat .drop_sub1 a:hover{
+    font-weight: bold;
+    background-color: #CDE77F;
+}
+nav .drop_main .drop_cat:hover .drop_sub1{ 
+    display:block;
+}
+
+nav .other_items{
+    padding-top:8px;
+    display: flex;
+    float:right;  
+}
+nav .other_items a{
+    text-decoration: none;
+    color:#e7f8b2;
+}
+nav .other_items a:hover{
+    color:white;
+    font-weight: bold;
+}
+nav .other_items i:hover{
+    color: white;
+}
+
+
+ /* 
+.company-name {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color:white;
+    display: inline-flex;
+    line-height: 45px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+.company-name:hover{
+    color: black;
+}
+li, a {
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 1px rgb(161, 161, 161);
+}
+header {
+    background-color:lightsalmon;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+.logo {
+    cursor: pointer;
+    height: 50px;
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0px 30px;
+}
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover {
+    color: black;
+    text-shadow: 2px 1px rgb(241, 241, 241);
+}
+*/
+  .container {
+      padding-top: 80px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      /*background-color: gray;*/
+      margin-top: 30px;
+  }
+
+  .box {
+      height: 500px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      margin: 10px 20px;
+  }
+
+  .b1 {
+    width: 550px;  
+    background: purple;      
+  }
+  
+  .im1 {
+      background-image: url('images/Image-goodness-of-milk.png');
+      background-size: cover;
+      background-position: center;
+
+    }
+
+    .im2 {
+        background-image: url('images/Coconut-yogurt-04.jpg.webp');
+        background-size: cover;
+        background-position: center;
+  
+    }
+
+    .im3 {
+        background-image: url('images/creamcheesepic.jpeg');
+        background-size: cover;
+        background-position: center;
+  
+    }
+    .im4 {
+        background-image: url('images/briecheese.jpg');
+        background-size: cover;
+        background-position: center;
+  
+    }
+
+    .im5 {
+        background-image: url('images/cheddarcheesepic.jpeg');
+        background-size: cover;
+        background-position: center;
+  
+    }
+
+  .b2 {
+      width: 400px;
+      background: #CDE77F;
+      padding: 40px;
+      padding-right: 55px;
+      padding-left: 55px;
+      text-shadow: none;
+      font-family: 'Lato', sans-serif;
+  }
+
+  .item-name {
+      margin-top: 20px;
+      margin-bottom: 8px;
+  }
+
+  .price {
+      margin-top: 25px;
+      margin-bottom: 15px;
+  }
+
+  .quantity {
+      width: 40px;
+      height: 30px;
+      background-color: white;
+      border-radius: 5px;
+      border-width: 3px;
+      border-style:groove;
+      font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  }
+
+  /*.add-cart { 
+        display: inline-flex;
+        background: #709176;
+        height:50px;
+        width: 185px;
+        border-style: none;
+        border-radius: 10px;
+        padding: 5px;
+        overflow: hidden;
+        justify-content: center;
+        font-size: 16px;
+        font-family: 'Quicksand', sans-serif;
+        text-decoration: none;
+        line-height: 37px;
+        cursor: pointer;
+ }  
+  .add-cart:hover {
+      background: rgb(192, 119, 168);
+      transform: scale(1.03);
+      transition: all 0.3s ease;
+  } */
+
+  .cart-button{
+    background-color: var(--green);
+    color: var(--light-green);
+    height: 40px;
+    width: 130px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px;
+    text-align: center;
+    line-height: 28px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.cart-button:hover{
+    outline-offset: 0;
+    outline: var(--outline-hover);
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+}
+  .more-details {
+      margin-top: 25px;
+      margin-bottom: 30px;
+      margin-left: 15px;
+      margin-right: 25px;
+      font-size: 13px;
+      font-weight: 400;
+      font-weight: normal;
+      font-family:'Lato', sans-serif;
+  }

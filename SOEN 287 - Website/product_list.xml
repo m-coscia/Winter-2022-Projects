@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<product_list>
+  <item>
+    <aisle>bakery</aisle>
+    <itemName>Pie</itemName>
+    <itemID>pie</itemID>
+    <image>pie.jpg</image>
+    <description>That good good pie is hard to come by but Organik is there for you. With our in-house bakery, we can provide the freshest baked goods. Crispy crust and juicy apples allow us to make the best pie. No GMOS and gluten free!</description>
+    <itemPrice>6.99</itemPrice>
+    <weight>250g/pack</weight>
+  </item>
+  <item>
+    <aisle>fruits</aisle>
+    <itemName>Apple</itemName>
+    <itemID>apple</itemID>
+    <image>apple.jpg</image>
+    <description>Our apples are from premium land in Quebec, grown with no artificial steroids. We treat them like our own kids. They are juicy and very good. EAT THEM.</description>
+    <itemPrice>0.90</itemPrice>
+    <weight>100 grams/unit</weight>
+  </item>
+  <item>
+    <aisle>vegetables</aisle>
+    <itemName>Mini Cucumbers</itemName>
+    <itemID>minicucumbers</itemID>
+    <image>cucumber.jpg</image>
+    <description>Mini organic cucumbers are known for their high-water content, which makes them refreshing, hydrating and low in calories. Cucumbers contain vitamins and minerals that are essential to our health and therefore have a place in a balanced diet.</description>
+    <itemPrice>1.00</itemPrice>
+    <weight>100 grams/unit</weight>
+  </item>
+  <item>
+    <aisle>vegetables</aisle>
+    <itemName>Lettuce</itemName>
+    <itemID>lettuce</itemID>
+    <image>lettuce.jpg</image>
+    <description>Often associated with Caesar salad, organic romaine lettuce hearts are rich in potassium and calcium, packed with vitamins A and C and have a particularly high-water content. Light and refreshing, the nutrients and minerals in organic romaine lettuce can be beneficial to anyone who eats it regularly.</description>
+    <itemPrice>1.80</itemPrice>
+    <weight>200 grams/unit</weight>
+  </item>
+  <item>
+    <aisle>vegetables</aisle>
+    <itemName>White Mushrooms</itemName>
+    <itemID>whitemushrooms</itemID>
+    <image>shrooms.jpg</image>
+    <description>Whole white mushrooms, also known as button or champignon, are the younger variant of portobello mushrooms. One of the most commonly used mushrooms in the world, this kitchen staple has a mild, earthy flavor and is delicious when sauted in garlic and olive oil.</description>
+    <itemPrice>0.50</itemPrice>
+    <weight>90 grams/unit</weight>
+  </item>
+  <item>
+    <aisle>meat</aisle>
+    <itemName>Ground Beef</itemName>
+    <itemID>groundbeef</itemID>
+    <image>groundbeef.jpg</image>
+    <description>Oragnik's Ground beef has so many uses in the kitchen that the options are unlimited. It's a great starter for a variety of meals because it's quick and easy to make.</description>
+    <itemPrice>8.99</itemPrice>
+    <weight>200 grams/unit</weight>
+  </item>
+  <item>
+    <aisle>meat</aisle>
+    <itemName>Ribs</itemName>
+    <itemID>ribs</itemID>
+    <image>ribs.jpg</image>
+    <description>A great economical rib cut. Slow cook in the oven or marinade and throw it on the BBQ, the choice is yours either way you will enjoy.</description>
+    <itemPrice>9.99</itemPrice>
+    <weight>500 grams/unit</weight>
+  </item>
+  <item>
+    <aisle>meat</aisle>
+    <itemName>Salmon</itemName>
+    <itemID>salmon</itemID>
+    <image>salmon.jpg</image>
+    <description>This succulent cut of Oragnik salmon comes from a sustainable source and is ready to be seasoned with herbs and spices. Simply chuck it in a frying pan or bake it, and it'll be done in no time. It goes nicely with salads, a bed of rice, or a mix of steamed vegetables because it's soft and flaky with a subtle flavour. Simply add a touch of lemon to bring out the flavours.</description>
+    <itemPrice>14.99</itemPrice>
+    <weight>400 grams/unit</weight>
+  </item>
+  <item>
+    <aisle>meat</aisle>
+    <itemName>Steak</itemName>
+    <itemID>steak</itemID>
+    <image>steak.jpg</image>
+    <description>Prepare dinner with the AAA Angus Beef Boneless Blade Steak from Organik. Made with 100% Canadian AAA Angus beef, this product delivers the world-class quality you've come to expect from Canada Beef.</description>
+    <itemPrice>12.99</itemPrice>
+    <weight>300 grams/unit</weight>
+  </item>
+  <item>
+    <aisle>meat</aisle>
+    <itemName>Wagyu</itemName>
+    <itemID>wagyu</itemID>
+    <image>wagyu.jpg</image>
+    <description>Enjoy this plate of Japanese A5 Wagyu Steak cuts by itself, or in a hotpot.</description>
+    <itemPrice>89.99</itemPrice>
+    <weight>500 grams/unit</weight>
+  </item>
+  <item>
+    <aisle>dairy</aisle>
+    <itemName>Milk</itemName>
+    <itemID>milk</itemID>
+    <image>milk.jpg</image>
+    <description>Our milk is organic, it does not contain hormones, pesticides or other harmful substances typically found in your average carton of milk at the grocery store. Our cows are also free range, meaning our farming practices are more humane, and produce a much better product for our customers.</description>
+    <itemPrice>10.10</itemPrice>
+    <weight>3 L/unit</weight>
+  </item>
+  <item>
+    <aisle>dairy</aisle>
+    <itemName>Yogurt</itemName>
+    <itemID>yogurt</itemID>
+    <image>yogurt.jpg</image>
+    <description>Our yogourt contains minimal added ingredients without compromising on the perfect taste. Good as a healthy snack with, or to put in a smoothie. It contains no hormones or pesticides. Our milk is from free range cows, for humane farming that results in healthier foods for our clients.</description>
+    <itemPrice>9.99</itemPrice>
+    <weight>200 grams/unit</weight>
+  </item>
+  <item>
+    <aisle>dairy</aisle>
+    <itemName>Cream Cheese</itemName>
+    <itemID>creamcheese</itemID>
+    <image>creamcheese.jpg</image>
+    <description>Our cream cheese is delicious and smooth. Great to eat with your breakfast toast in the morning, or on crackers as a snack. Just like all our dairy products, it contains no hormones or pesticides. Our milk is taken from free range cows, for humane farming that results in healthier foods for our clients.</description>
+    <itemPrice>8.88</itemPrice>
+    <weight>340 grams/unit</weight>
+  </item>
+  <item>
+    <aisle>dairy</aisle>
+    <itemName>Brie</itemName>
+    <itemID>brie</itemID>
+    <image>brie.jpg</image>
+    <description>Our brie cheese is perfectly ripened, with an amazing texture and taste. Good to eat on a piece of baguette, with green apples, or on its own. It contains no hormones or pesticides. All our dairy products are made with milk from free range cows; humane farming that results in healthier foods.</description>
+    <itemPrice>7.77</itemPrice>
+    <weight>200 grams/unit</weight>
+  </item>
+  <item>
+    <aisle>dairy</aisle>
+    <itemName>Cheddar</itemName>
+    <itemID>cheddar</itemID>
+    <image>cheddar.jpg</image>
+    <description>Our cheddar cheese has a delicious strong taste. Good for cooking, to enjoy with wine, or on its own. Like all our dairy products, it contains no hormones or pesticides. All our dairy products are made with milk taken from free range cows, for humane farming that results in healthier foods.</description>
+    <itemPrice>22.22</itemPrice>
+    <weight>1 Kilo/unit</weight>
+  </item>
+  <item>
+    <aisle>bakery</aisle>
+    <itemName>Baguette</itemName>
+    <itemID>baguette</itemID>
+    <image>baguette.jpg</image>
+    <description>Freshly baked, crisp out of the oven whole wheat baguettes. Prepared on the premises every morning for a fresh, delectable bread to enter your home and be welcomed into your mouths. Perfect for an afternoon munch or a luncheon.</description>
+    <itemPrice>0.88</itemPrice>
+    <weight>255 grams/unit</weight>
+  </item>
+  <item>
+    <aisle>bakery</aisle>
+    <itemName>Naan</itemName>
+    <itemID>naan</itemID>
+    <image>naan.jpg</image>
+    <description>President Choice's Mini Naan are handled with utmost care. These naan are made from quality ingredients and fresh garlic. Create your own meals with these mini naans for a supper with the family around the table.</description>
+    <itemPrice>2.99</itemPrice>
+    <weight>250 grams/unit</weight>
+  </item>
+  <item>
+    <aisle>bakery</aisle>
+    <itemName>Muffins</itemName>
+    <itemID>muffins</itemID>
+    <image>muffins.jpg</image>
+    <description>Farmer's Market Banana Chocolate Chunk Muffins are baked with rich chocolate and the freshest of banana. It does not contain nuts or tree nuts. A delicious snack to grab on the go!</description>
+    <itemPrice>4.50</itemPrice>
+    <weight>100 grams/unit</weight>
+  </item>
+  <item>
+    <aisle>bakery</aisle>
+    <itemName>Toast</itemName>
+    <itemID>toast</itemID>
+    <image>toast.jpg</image>
+    <description>Villaggio's White Bread offers a healthy soft bread with no added fats and usgares as well as 10g of proteiun per serving. It contains no GMOs and is a high source of protein.</description>
+    <itemPrice>4.50</itemPrice>
+    <weight>500 grams/unit</weight>
+  </item>
+  <item>
+    <aisle>bakery</aisle>
+    <itemName>Cake</itemName>
+    <itemID>cake</itemID>
+    <image>cake.jpg</image>
+    <description>Oragnik's in-house bakery brings you this delectable cookies and cream cake that can serve up to 10 people. It does nto contain partially hydrogenated oils.</description>
+    <itemPrice>5.00</itemPrice>
+    <weight>1 Kg/unit</weight>
+  </item>
+  <item>
+    <aisle>fruits</aisle>
+    <itemName>Lemons</itemName>
+    <itemID>lemons</itemID>
+    <image>lemons.jpg</image>
+    <description>Leemoooooon. See-through in the sunlight. She wore leemoooooon. But never in the daylight. She's gonna make you cryyyyyyy. She's gonna make you whisper and moan. And when you're dryyyyyyy. She draws water from the stone.</description>
+    <itemPrice>1.50</itemPrice>
+    <weight>150 grams/unit</weight>
+  </item>
+  <item>
+    <aisle>vegetables</aisle>
+    <itemName>Green Peppers</itemName>
+    <itemID>greenpeppers</itemID>
+    <image>peppers.jpg</image>
+    <description>Whether eaten with dip or added to a stir-fry, raw or cooked, green peppers are always excellent. Low in calories, it is a green vegetable rich in vitamins and minerals and is one of the vegetables with the highest fiber content.</description>
+    <itemPrice>0.60</itemPrice>
+    <weight>90 grams/unit</weight>
+  </item>
+  <item>
+    <aisle>fruits</aisle>
+    <itemName>Strawberries</itemName>
+    <itemID>strawberries</itemID>
+    <image>strawberries.jpg</image>
+    <description>Our strawberries are very red and very big. They are very sweet, juicy and would go well with oatmeal. Premium pricing for the premium quality.</description>
+    <itemPrice>5.99</itemPrice>
+    <weight>250 grams/Box</weight>
+  </item>
+  <item>
+    <aisle>fruits</aisle>
+    <itemName>Kiwis</itemName>
+    <itemID>kiwis</itemID>
+    <image>kiwi.jpg</image>
+    <description>Our Kiwis are comming from a land far far-away, New Zealand. They are absolutely sweet, delicious and very oval. They are raised without GMOs, and surrounded by lovely sheeps. No they are not birds, but they are fruits.</description>
+    <itemPrice>0.80</itemPrice>
+    <weight>90 grams/unit</weight>
+  </item>
+  <item>
+    <aisle>vegetables</aisle>
+    <itemName>Cherry Tomatoes</itemName>
+    <itemID>cherrytomatoes</itemID>
+    <image>cherrytomato.jpg</image>
+    <description>Organik Cherry Tomatoes has so many uses in the kitchen that the options are unlimited. It's a great starter for a variety of meals because it's quick and easy to make.</description>
+    <itemPrice>2.99</itemPrice>
+    <weight>250 grams/unit</weight>
+  </item>
+  <item>
+    <aisle>fruits</aisle>
+    <itemName>Blueberries</itemName>
+    <itemID>blueberries</itemID>
+    <image>blueberry.jpg</image>
+    <description>Our blueberries are from premium land in Mexico, grown with a lot of artificial steroids. We do not treat them like our own kids. They are small but very good. EAT THEM.</description>
+    <itemPrice>3.99</itemPrice>
+    <weight>250 grams/box</weight>
+  </item>
+  
+</product_list>

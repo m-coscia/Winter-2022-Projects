@@ -1,0 +1,38 @@
+body{
+    background-color: grey;
+}
+
+button {
+    background-color: rgb(57, 124, 17);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  button:hover {
+    opacity:1;
+  }
+  
+  .agree1 {
+    padding: 14px 20px;
+    background-color: rgb(122, 36, 36);
+  }
+  
+  .agree1, .agree2 {
+    float: left;
+    width: 50%;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
