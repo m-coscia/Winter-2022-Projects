@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orders>
+  
+<order>
+    
+    
+    
+
+
+  <item><quantity>9</quantity><itemID>cake</itemID></item><item><quantity>7</quantity><itemID>apple</itemID></item><item><quantity>5</quantity><itemID>lettuce</itemID></item><item><quantity>8</quantity><itemID>muffins</itemID></item><item><quantity>8</quantity><itemID>wagyu</itemID></item><item><quantity>2</quantity><itemID>strawberries</itemID></item><item><quantity>2</quantity><itemID>blueberries</itemID></item></order><order><item><quantity>1</quantity><itemID>cake</itemID></item><item><quantity>1</quantity><itemID>tomato</itemID></item></order><order><item><quantity>1</quantity><itemID>tomato</itemID></item><item><quantity>1</quantity><itemID>brie</itemID></item></order><order><item><itemID>blueberry</itemID><quantity>4</quantity></item></order><order><item><itemID>blueberry</itemID><quantity>4</quantity></item></order><order><item><quantity>1</quantity><itemID>toast</itemID></item></order><order><item><itemID>blueberries</itemID><quantity>4</quantity></item><item><itemID>cherrytomatoes</itemID><quantity>1</quantity></item></order><order><item><itemID>strawberries</itemID><quantity>1</quantity></item></order><order><item><itemID>strawberry</itemID><quantity>1</quantity></item></order><order><item><itemID>strawberries</itemID><quantity>1</quantity></item><item><quantity>1</quantity><itemID>strawberries</itemID></item><item><quantity>1</quantity><itemID>blueberries</itemID></item></order><order><item><itemID>minicucumbers</itemID><quantity>5</quantity></item></order></orders>
