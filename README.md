@@ -1,5 +1,7 @@
 # SOEN 287 (Web Programming) Project: Online Grocery Store
 
+Note: This `README.md` file is to demonstrate a collaborative website project created for a web programming course which taught the fundamentals and the application of HTML, CSS, JavaScript, and PHP. The website is no longer being hosted due to funding.
+
 ### Project Partners:
 <a href="https://github.com/RyanGuzelian">Ryan Guzelian</a><br/>
 <a href="https://github.com/suha-ab">Suha Abubakr</a><br/>
