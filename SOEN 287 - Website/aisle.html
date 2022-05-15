@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Aisle </title>
+    <link rel="icon" href="logo.png">
+    <meta charset="utf-8" />
+    <meta name="Title" content="SOEN 287 Assignment 1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/5dd9030673.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="a1_design.css">
+    <!-- css file link -->
+    <link rel="stylesheet" href="p2.css">
+    
+</head>
+<body>
+    <nav class = "navbar"></nav>
+    <h1 id="heading" class="heading"></h1>
+    <section class="products" id="bakery">
+
+    </section>
+
+    <script defer>
+
+            var navbar = document.getElementsByClassName("navbar")[0];
+            var logo = document.createElement("a");
+            var logoImg = document.createElement("img");
+            logo.href = "index.php";
+            logoImg.src="logo.png";
+            logo.appendChild(logoImg);
+            navbar.appendChild(logo);
+
+            var drops = document.createElement("div");
+            var fas = document.createElement("i");
+            drops.className = "drop_main"
+            fas.className = "fas fa-caret-square-down fa-2x";
+            drops.appendChild(fas);
+            
+
+
+            var xmlhttp, xmlDoc;
+
+            xmlhttp = new XMLHttpRequest();
+            xmlhttp.open("GET", "product_list.xml", false);
+            xmlhttp.send();
+            xmlDoc = xmlhttp.responseXML;
+
+            let itemIDs = [];
+            let itemPrices = [];
+            let itemNames = [];
+            let itemAisles = [];
+            let itemWeights = [];
+            let itemImages = [];
+
+            let allItemIDs=xmlDoc.getElementsByTagName("itemID");
+            let allItemPrices = xmlDoc.getElementsByTagName("itemPrice");
+            let allItemNames = xmlDoc.getElementsByTagName("itemName");
+            let allItemAisles = xmlDoc.getElementsByTagName("aisle");
+            let allItemWeights = xmlDoc.getElementsByTagName("weight");
+            let allItemImages = xmlDoc.getElementsByTagName("image");
+
+
+            for (let i = 0; i < allItemIDs.length;i++){
+                
+                itemIDs.push(allItemIDs[i].childNodes[0].nodeValue);
+                itemPrices.push(allItemPrices[i].childNodes[0].nodeValue);
+                itemNames.push(allItemNames[i].childNodes[0].nodeValue);
+                itemAisles.push(allItemAisles[i].childNodes[0].nodeValue);
+                itemWeights.push(allItemWeights[i].childNodes[0].nodeValue);
+                itemImages.push(allItemImages[i].childNodes[0].nodeValue);
+
+            }
+            var fruitDrops = document.createElement("div");
+            fruitDrops.className = "drop_cat";
+            var fruitHolder = document.createElement("div");
+            fruitHolder.className = "drop_sub1";
+            var fruitLink = document.createElement("a");
+            fruitLink.href = "aisle.html?aisleID=fruits";
+            fruitLink.innerHTML = "Fruits";
+
+            fruitDrops.appendChild(fruitLink);
+            fruitDrops.appendChild(fruitHolder);
+
+
+            var vegeDrops = document.createElement("div");
+            vegeDrops.className = "drop_cat";
+            var vegeHolder = document.createElement("div");
+            vegeHolder.className = "drop_sub1";
+            var vegeLink = document.createElement("a");
+            vegeLink.href = "aisle.html?aisleID=vegetables";
+            vegeLink.innerHTML = "Vegetables";
+
+            vegeDrops.appendChild(vegeLink);
+            vegeDrops.appendChild(vegeHolder);
+
+            var meatDrops = document.createElement("div");
+            meatDrops.className = "drop_cat";
+            var meatHolder = document.createElement("div");
+            meatHolder.className = "drop_sub1";
+            var meatLink = document.createElement("a");
+            meatLink.href = "aisle.html?aisleID=meat";
+            meatLink.innerHTML = "Meat";
+
+            meatDrops.appendChild(meatLink);
+            meatDrops.appendChild(meatHolder);
+        
+
+            var dairyDrops = document.createElement("div");
+            dairyDrops.className = "drop_cat";
+            var dairyHolder = document.createElement("div");
+            dairyHolder.className = "drop_sub1";
+            var dairyLink = document.createElement("a");
+            dairyLink.href = "aisle.html?aisleID=dairy";
+            dairyLink.innerHTML = "Dairy";
+
+            dairyDrops.appendChild(dairyLink);
+            dairyDrops.appendChild(dairyHolder);
+
+            
+            var bakeryDrops = document.createElement("div");
+            bakeryDrops.className = "drop_cat";
+            var bakeryHolder = document.createElement("div");
+            bakeryHolder.className = "drop_sub1";
+            var bakeryLink = document.createElement("a");
+            bakeryLink.href = "aisle.html?aisleID=bakery";
+            bakeryLink.innerHTML = "Bakery";
+
+            bakeryDrops.appendChild(bakeryLink);
+            bakeryDrops.appendChild(bakeryHolder);
+
+            for(let i = 0; i < itemIDs.length; i++){
+                var currentItem = document.createElement("a");
+                currentItem.className = "drop_sub_item";
+                currentItem.href = "itemTemplate.html?itemID="+itemIDs[i]+"&itemName="+itemNames[i]+"&itemPrice="+itemPrices[i]+"&aisle="+itemAisles[i]+"&measureUnit="+itemWeights[i];
+                currentItem.innerHTML = itemNames[i];
+                if (itemAisles[i] == "fruits"){
+                    fruitHolder.appendChild(currentItem);
+                } else if (itemAisles[i] == "vegetables"){
+                    vegeHolder.appendChild(currentItem);
+                } else if (itemAisles[i] == "meat"){
+                    meatHolder.appendChild(currentItem);
+                } else if (itemAisles[i] == "dairy"){
+                    dairyHolder.appendChild(currentItem);
+                } else if (itemAisles[i] == "bakery"){
+                    bakeryHolder.appendChild(currentItem);
+                }
+            }
+
+            drops.appendChild(fruitDrops);
+            drops.appendChild(vegeDrops);
+            drops.appendChild(meatDrops);
+            drops.appendChild(dairyDrops);
+            drops.appendChild(bakeryDrops);
+
+            
+
+            var otherHolder = document.createElement("div");
+            otherHolder.className = "other_items";
+            var cartHolder = document.createElement("a");
+            cartHolder.href = "addtocart.php";
+            var cart = document.createElement("i");
+            cart.className = "fas fa-shopping-cart";
+            cartHolder.appendChild(cart);
+            cart.innerHTML = "Cart";
+            otherHolder.appendChild(cartHolder);
+
+            var signupHolder = document.createElement("a");
+            signupHolder.href = "signup.php";
+            var signup = document.createElement("i");
+            signup.className = "far fa-user-circle";
+            signupHolder.appendChild(signup);
+            signup.innerHTML = "Sign Up";
+            otherHolder.appendChild(signupHolder);
+
+            var signinHolder = document.createElement("a");
+            signinHolder.href = "signin.php";
+            var signin = document.createElement("i");
+            signin.className = "far fa-user-circle";
+            signinHolder.appendChild(signin);
+            signin.innerHTML = "Sign In";
+            otherHolder.appendChild(signinHolder);
+
+            navbar.appendChild(drops);
+            navbar.appendChild(otherHolder);
+        
+
+
+
+        
+            const urlParams = new URLSearchParams(window.location.search);
+            var currentAisleID = urlParams.get("aisleID");
+            var productsHolder = document.getElementsByClassName("products");
+            var heading = document.getElementsByClassName("heading")[0];
+            heading.innerHTML = currentAisleID.charAt(0).toUpperCase() + currentAisleID.slice(1) + " Products"
+            for (let i = 0; i < itemIDs.length; i++){
+                //alert(itemAisles[i] +" "+currentAisleID)
+                if (currentAisleID == itemAisles[i]){
+                    var tempItem = document.createElement("div");
+                    tempItem.className = "box";
+                    productsHolder[0].appendChild(tempItem);
+                    //Setting item's Image
+                    var itemInfo = document.createElement("h3");
+                    var itemLink = document.createElement("a");
+                    itemLink.className = "links";
+                    itemLink.href = "itemTemplate.html?itemID="+itemIDs[i]+"&itemName="+itemNames[i]+"&itemPrice="+itemPrices[i]+"&aisle="+itemAisles[i]+"&measureUnit="+itemWeights[i];
+                    itemLink.innerHTML = itemNames[i];
+                    var itemIMG = document.createElement("img");
+                    itemIMG.src = itemImages[i];
+                    itemIMG.style.width = "92%";
+                    // Appending to Parent
+                    itemInfo.appendChild(itemIMG);
+                    itemInfo.appendChild(itemLink);
+                    tempItem.appendChild(itemInfo);
+
+                    var itemPrice = document.createElement("div");
+                    itemPrice.className="price";
+                    itemPrice.innerHTML = "$"+itemPrices[i];
+                    tempItem.appendChild(itemPrice);
+                    
+                    let addToCartBtn = document.createElement("a");
+                    var addToCartTxt = document.createElement("i");
+                    addToCartBtn.className = "cart-button";
+                    addToCartBtn.href = "addtocart.php";
+                    addToCartBtn.id = itemIDs[i];
+                    addToCartBtn.onclick = function() {
+                        if (localStorage.getItem(itemIDs[i]) == null){
+                            localStorage.setItem(itemIDs[i], 1);
+                        } else {
+                            localStorage.setItem(itemIDs[i], incrementProduct(localStorage.getItem(itemIDs[i])))
+                        }
+                        localStorage.setItem(addToCartBtn.id+"InCart", 1)
+                    }
+                    addToCartTxt.className = "fas fa-shopping-cart";
+                    addToCartTxt.innerHTML = "Add To Cart";
+
+                    addToCartBtn.appendChild(addToCartTxt);
+                    tempItem.appendChild(addToCartBtn);
+                    /*
+                    var inputField = document.createElement("input");
+                    inputField.className = "quantity";
+                    inputField.type = "number";
+                    inputField.value = 1;
+                    inputField.id = itemIDs[i];
+
+                    tempItem.appendChild(inputField);
+                    if (localStorage.getItem(itemIDs[i])==null){
+                        localStorage.setItem(itemIDs[i], 1);
+                    }
+
+                    let inputElems;
+                    inputElems = document.getElementById(itemIDs[i]);
+                    inputElems.addEventListener('input', () => {
+                    localStorage.setItem(itemIDs[i], inputElems.value);
+                    console.log(i)
+                    });
+*/
+                    document.getElementById(itemIDs[i]).value = localStorage.getItem(itemIDs[i]);
+                    
+                }
+            }
+
+            function incrementProduct(num){
+                return 1 + parseInt(num);
+            }
+            
+    </script>
+
+</body>
